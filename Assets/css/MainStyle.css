@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir.woff2') format('woff2'),
+        url('../fonts/Vazir.woff') format('woff'),
+        url('../fonts/Vazir.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazir-Bold.woff2') format('woff2'),
+        url('../fonts/Vazir-Bold.woff') format('woff'),
+        url('../fonts/Vazir-Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Vazir', Arial, sans-serif;
+    font-weight: normal;
+    direction: rtl;
+    background-color: aliceblue;
+}
+
+
+li:hover {
+    transform: translateY(-5px);
+    transition: all 2s;
+    color: palevioletred;
+}
+
+.link:hover {
+    color: palevioletred;
+}
+
+.link {
+    color: black;
+}
+
+.item {
+    color: black;
+}
+
+.item:hover {
+    color: black;
+}
+
+.item:hover {
+    color: black;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    transition: all 3s;
+}
+
+.icn:hover {
+    transform: translatey(-5px);
+    transition: all 2s;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.block {
+    display: block;
+    height: 1500px;
+    width: 80%;
+    color: #FFFFFF;
+    background-color: #119F9D;
+    border: 1px solid #006738;
+    clear: both;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#back-top {
+    position: fixed;
+    bottom: 50px;
+    margin-left: -150px;
+}
+
+#back-top a {
+    width: 108px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #049fdd;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+#back-top a:hover {
+    color: #000;
+}
+
+#back-top span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 8px;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+#back-top a:hover span {
+    transition: all 2s;
+    transform: translateY(-5px);
+}
+
+.carousel-indicators1 {
+    border-radius: 50px;
+}
+
+.lds-ellipsis,
+.lds-ellipsis div {
+    box-sizing: border-box;
+    color: blue;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 33.33333px;
+    width: 13.33333px;
+    height: 13.33333px;
+    border-radius: 50%;
+    background: currentColor;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}
