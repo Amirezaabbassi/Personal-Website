@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
     font-family: Vazir;
     font-style: normal;
     font-weight: normal;
@@ -197,4 +197,58 @@ a {
     100% {
         transform: translate(24px, 0);
     }
+} 
+
+
+body.dark-mode {
+    background-color: aliceblue;
+	 color: #eee;
+}
+ body.dark-mode a {
+	 color: #111;
+}
+
+ body.dark-mode button {
+	 background-color: #eee;
+	 color: #111;
+}
+ body.light-mode {
+	 background-color: #eee;
+	 color: #111;
+}
+ body.light-mode a {
+	 color: #111;
+}
+ body.light-mode button {
+	 background-color: #ffffff;
+	 color: #eee;
+}
+body.dark-mode .button {
+  background-color:#98321C !important;
+  color:#fff !important;
+}
+body.dark-mode .notification {
+  background-color:grey !important;
+  color:#fff !important;
+}
+body.dark-mode .title {
+  color:#fff !important;
+}
+body.dark-mode .input {
+   background-color:grey !important;
+  color:#fff !important;
+}
+.my-class{
+  color:red !important;
+  font-size:2em;
+  
+}
+body.dark-mode .my-class{
+  color:#fff !important;
+  
+}
+
+.bgclick:hover{
+    transition: all 2s;
+    transform: translateY(-5px);
 }
